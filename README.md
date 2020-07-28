@@ -4,6 +4,6 @@
     height="120"
     width="120"
   />
-  <h1>a-bit-of-deno</h1>
+  <h1>usain-bolt</h1>
   <span>🏃🏾‍♂️ Internet connection speed test for your Terminal</span>
 </div>
