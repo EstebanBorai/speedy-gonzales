@@ -3,25 +3,25 @@ use std::error::Error;
 use reqwest::{Error as ReqwestError};
 
 #[derive(Debug)]
-pub struct SpeedTestError {
+pub struct SpeedyTestError {
   pub message: String,
 }
 
-impl From<ReqwestError> for SpeedTestError {
+impl From<ReqwestError> for SpeedyTestError {
   fn from(error: ReqwestError) -> Self {
-    SpeedTestError {
+    SpeedyTestError {
       message: error.status().unwrap().to_string()
     }
   }
 }
 
-impl fmt::Display for SpeedTestError {
+impl fmt::Display for SpeedyTestError {
   fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
     write!(f, "{}", format!("The request returned {}", self.message))
   }
 }
 
-impl Error for SpeedTestError {
+impl Error for SpeedyTestError {
   fn source(&self) -> Option<&(dyn Error + 'static)> {
     Some(self)
   }

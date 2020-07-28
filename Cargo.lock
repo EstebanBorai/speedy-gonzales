@@ -770,6 +770,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "speedy-gonzales"
+version = "0.1.0"
+dependencies = [
+ "reqwest",
+ "tokio",
+]
+
+[[package]]
 name = "syn"
 version = "1.0.36"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -943,14 +951,6 @@ dependencies = [
  "idna",
  "matches",
  "percent-encoding",
-]
-
-[[package]]
-name = "usain-bolt"
-version = "0.1.0"
-dependencies = [
- "reqwest",
- "tokio",
 ]
 
 [[package]]
